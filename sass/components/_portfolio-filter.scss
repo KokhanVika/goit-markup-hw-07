@@ -27,12 +27,7 @@
 }
 }
 .btn-main {
-    transition: background-color 250ms var(--timing-function), 
-                color 250ms var(--timing-function);
-
-    &:hover {
-        background-color: var(--accent-color);
-        color: var(--third-text-color);
-    }
+    background-color: var(--accent-color);
+    color: var(--third-text-color);
 }
 
