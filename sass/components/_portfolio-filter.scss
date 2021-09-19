@@ -5,8 +5,7 @@
 }
 .filter-button {
     padding: 6px 22px;
-    font-weight: 500;
-    line-height: 1.62;
+    @include font(14px, 500, 1.62);
     background-color: var(--secondary-bg-color);
     border-radius: 4px;
     transition: background-color 250ms var(--timing-function), 

@@ -1,12 +1,10 @@
 .social-link-list {
-    display: flex;
-    align-items: center;
+    @include display();
     justify-content: space-between;
 }
 .social-list-icon {
-    display: flex;
+    @include display();
     justify-content: center;
-    align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;

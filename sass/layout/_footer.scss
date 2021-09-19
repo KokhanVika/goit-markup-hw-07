@@ -4,8 +4,7 @@
     padding-bottom: 60px;
 }
 .footer-conteiner {
-    display: flex;
-    align-items: baseline;
+    @include display($ai: baseline);
 }
 .footer-address {
     margin-top: 20px;
@@ -35,21 +34,19 @@
     margin-right: 93px;
 }
 .footer-third-title {
-    font-weight: bold;
-    line-height: 16px;
+    @include font($fw: bold);
     text-transform: uppercase;
     color:var(--main-title-color);
     margin-bottom: 20px;
 }
 .social-icon-footer {
-    display: flex;
+    @include display();
     justify-content: center;
-    align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     color: var(--main-title-color);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(119, 91, 91, 0.1);
     transition: background-color 250ms var(--timing-function);
 
         &:hover,

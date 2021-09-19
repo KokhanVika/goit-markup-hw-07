@@ -1,22 +1,15 @@
 .header {
     border-bottom: 1px solid #ECECEC;
         .conteiner {
-            display: flex;
-            align-items: center;
+            @include display();
             }
 }
 
-.header-navigation{
-    display: flex;
-    align-items: center
+.header-navigation, .header-list, .header-contact-list {
+    @include display();
 }
-.header-list {
-    display: flex;
-    align-items: center;
-}
+
 .header-contact-list {
-    display: flex;
-    align-items: center;
     margin-left: auto;
 }
 .header-logo-span, .header-link, .section-title {
@@ -60,15 +53,13 @@
 }
     
 .header-link, .header-mail, .header-tel {
-    font-weight: 500;
-    line-height: 1.14;
+    @include font($fw: 500);
     letter-spacing: 0.02em;
     padding: 32px 0;
 }
 .header-mail, .header-tel {
    color: var(--main-text-color);
-   display: flex;
-   align-items: center;
+   @include display();
 }
 
 .contact {

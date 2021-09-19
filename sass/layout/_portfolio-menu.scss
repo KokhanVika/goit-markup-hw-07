@@ -33,9 +33,7 @@
     border-top:  0;
 }
 .menu-name {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 2.00;
+    @include font(18px, bold, 2.00);
     letter-spacing: 0.06em;
     margin-bottom: 4px;
 }

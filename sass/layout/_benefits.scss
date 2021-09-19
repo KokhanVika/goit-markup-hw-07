@@ -3,8 +3,7 @@
 }
 
 .benefits-subtitle {
-    font-weight: bold;
-    line-height: 1.14;
+    @include font($fw: bold);
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -13,7 +12,7 @@
 }
 .benefits-list {
     display: flex;
-        margin-left: -30px;
+    margin-left: -30px;
     margin-top: -30px;
 }
 .benefits-item {
@@ -22,8 +21,7 @@
     margin-top: 30px;
 }
 .benefist-image {
-    display: flex;
-    align-items: center;
+    @include display();
     justify-content: center;
     background-color:var(--secondary-bg-color);
     width: 270px;
