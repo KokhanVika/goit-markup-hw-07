@@ -187,7 +187,6 @@ img {
   line-height: 1.87;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
   letter-spacing: 0.06em;
   color: var(--third-text-color);
   background: var(--accent-color);
@@ -421,10 +420,22 @@ img {
   display: block;
   padding: 32px 0;
   transition: color 250ms var(--timing-function);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-list__link:hover, .header-list__link:focus {
+  color: var(--accent-color);
 }
 
 .header-list__item {
   position: relative;
+}
+
+.header-list__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-list__link.current {
@@ -457,28 +468,12 @@ img {
   letter-spacing: 0.02em;
 }
 
-.header-list__link {
-  padding: 32px 0;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.header-list__link:hover, .header-list__link:focus {
-  color: var(--accent-color);
-}
-
 .contact {
   transition: color 250ms var(--timing-function);
 }
 
 .contact:hover, .contact:focus {
   color: var(--accent-color);
-}
-
-.header-list__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .header-contact__item:not(:last-child) {
@@ -521,16 +516,16 @@ img {
   font-weight: bold;
   line-height: 1.87;
   display: block;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
   letter-spacing: 0.06em;
   color: var(--bg-color);
   background: var(--accent-color);
   transition: background-color 250ms var(--timing-function);
 }
 
-.solutions-button :hover, .solutions-button :focus {
+.solutions-button:hover, .solutions-button:focus {
   background-color: var(--bt-bg-color);
 }
 
@@ -635,19 +630,19 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-list__name, .team-list__text {
+.team-list__name {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.19;
   text-align: center;
-}
-
-.team-list__name {
-  font-weight: 500;
   margin-bottom: 10px;
 }
 
 .team-list__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.19;
+  text-align: center;
   margin-bottom: 16px;
 }
 

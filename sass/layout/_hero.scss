@@ -24,15 +24,16 @@
     padding: 10px 32px;
     border-radius: 4px;
     @include font(14px, bold, 1.87);
-    display: block;
+    @include display($dp: block);
     margin-left: auto;
     margin-right: auto;
-    align-items: center;
     letter-spacing: 0.06em;
     color: var(--bg-color);
     background: var(--accent-color);
     transition: background-color 250ms var(--timing-function);
+        &:hover, 
+        &:focus {
+        background-color: var(--bt-bg-color);   
+       }
 }
-.solutions-button :hover, .solutions-button :focus {
- background-color: var(--bt-bg-color);   
-}
+
