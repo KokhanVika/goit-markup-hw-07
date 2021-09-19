@@ -12,11 +12,8 @@
     @include display();
     margin-left: auto;
 }
-.header-list__link, .section-title {
-    color: var(--second-title-color);
-}
-
 .header-list__link {
+    color: var(--second-title-color);
     display: block;
     padding: 32px 0;
     transition: color 250ms var(--timing-function);
