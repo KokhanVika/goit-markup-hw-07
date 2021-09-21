@@ -35,6 +35,7 @@
 }
 .header-list__link.current {
     transition: color 250ms var(--timing-function);
+    color: var(--accent-color);
 
         &::after {
         content:'' ;

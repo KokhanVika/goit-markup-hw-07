@@ -36,6 +36,7 @@
     @include font(18px, bold, 2.00);
     letter-spacing: 0.06em;
     margin-bottom: 4px;
+    color: var(--second-title-color);
 }
 .card__text {
     @include font(16px, 400, 1.87);
